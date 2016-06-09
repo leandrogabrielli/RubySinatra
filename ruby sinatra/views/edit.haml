@@ -1,0 +1,19 @@
+%h1
+  Edit Software Entry
+%form{:action => "/software/edit/#{@software.id}", :method => "post", :role => 'form'}
+  %input{ :type => "hidden", :name => "_method", :value => "put"}
+  %div.form-group
+  %label Title
+  %textarea.form-control{:name => "title", :type => "text"}
+  = @software.title
+  %div.form-group
+  %label Description
+  %textarea.form-control{:name => "description", :type => "text"}
+  = @software.description
+  %div.form-group
+  %label Software Language
+  %textarea.form-control{:name => "language", :type => "text"} 
+  = @software.language
+  %p
+    %input{:type => "submit", :value => "Update", :class => "btn"}
+    %a{:href => "/", :class => "btn"} Back

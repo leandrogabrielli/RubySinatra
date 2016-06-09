@@ -1,0 +1,15 @@
+%h1
+  New Software Entry
+%form{:action => "/new_software", :method => "post", :role => 'form'}
+  %div.form-group
+  %label Title
+  %textarea.form-control{:name => "title", :type => "text"}
+  %div.form-group
+  %label Description
+  %textarea.form-control{:name => "description", :type => "text"}
+  %div.form-group
+  %label Language
+  %textarea.form-control{:name => "language", :type => "text"}
+  %p
+    %input{:type => "submit", :value => "Save", :class => "btn"}
+    %a{:href => "/", :class => "btn"} Back

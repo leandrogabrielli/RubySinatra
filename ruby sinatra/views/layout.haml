@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Software Portfolio
+    %link{ :href => "/css/bootstrap.css", :type => "text/css", :rel => "stylesheet" }
+    %link{ :href => "/css/bootstrap-responsive.css", :type => "text/css", :rel => "stylesheet" }
+    
+  %body
+    %div.container
+      %div.header
+        %div= haml :navbar
+
+        %h3 Welcome        
+
+      %div.container
+        =yield
+
+      %div.footer
+        2016 Leandro Gabrielli

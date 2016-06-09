@@ -1,0 +1,17 @@
+%div.container{:class => 'panel panel-primary'}
+  %h1
+    You can contact me by filling in the form below:
+  %form{:action => "/contact", :method => "post", :role => 'form'}
+    %div.form-group
+    %label Name
+    %textarea.form-control{:name => "name", :type => "text"}
+    %div.form-group
+    %label Email
+    %textarea.form-control{:name => "email", :type => "text"}
+    %div.form-group
+    %label Message
+    %textarea.form-control{:name => "message", :type => "text"}
+    %p
+      %input{:type => "submit", :value => "Send Message", :class => "btn"}
+      %a{:href => "/", :class => "btn"} Back 
+

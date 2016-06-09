@@ -1,0 +1,8 @@
+%ul.list
+ - @sware.each do |software|
+  %li(class="glyphicon glyphicon-search" aria-hidden="true")
+   %a(href="/Software/#{software.id}")
+   = software.title
+   %a.pull-right(href="/software/delete/#{software.id}" class="btn btn-lg btn-danger")  Delete
+   %a(href="/software/edit/#{software.id}" class="btn btn-lg btn-primary")  Edit
+   %li(role="separator" class="divider") ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
